@@ -1,0 +1,491 @@
+/* Main Variables */
+
+:root {
+    /*Page Wide Variables*/
+    --mainFont: 'Times New Roman', Times, serif; 
+    
+    /*Header Variables*/
+    --headerBackgroundColor: black; 
+    --bannerTextColor: white;
+    --fullContainerWidth: 100%;
+    --pictureTitleBackgroundColor: black;
+    --pictureTitleColor: white;
+    --imageAspectRatio: cover;
+    --smallFontSize: 18px;
+    --mediumFontSize: 24px;
+    --largeFontSize: 32px;
+    --solidBorder: solid;
+    --borderWidth: 3px;
+    --tealBorder: teal;
+    --fullWidth: 100%;
+    --rightBorder: 3px solid teal;
+    --imageBorder: 2px solid black;
+    --imageTitleBackgroundColor: black;
+    --imageTitleTextColor: white;
+    --imagePosition: top;
+    }
+
+body {
+    background-color: lightsalmon;
+}
+
+/*Header Navigation Menu*/
+
+.container-fluid {
+    background-color: var(--headerBackgroundColor);
+}
+
+a {
+    font-family: var(--mainFont);
+    color: var(--bannerTextColor);
+}
+/*Header Navigation Menu*/
+.mainBannerImageContainer {
+    width: var(--fullContainerWidth);
+    height: 400px;
+}
+
+#bannerImage {
+    width: var(--fullContainerWidth);
+    height: 400px;
+    object-fit: cover;
+}
+
+.headerBannerTextContainer {
+    background-color: var(--pictureTitleBackgroundColor);
+    color: var(--pictureTitleColor);
+    font-family: var(--mainFont);
+    font-size: var(--mediumFontSize);
+    position: absolute;
+    top: 25%;
+    right: 5%;
+  }
+/*Main Banner Image Section*/
+
+/*Main Banner Image Section*/
+
+
+
+/*Main Content Section*/
+
+    /*About Me Content Section*/
+        #aboutMeContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: var(--fullWidth);
+            height: 300px;
+            border-style: var(--solidBorder);
+            border-width: var(--borderWidth);
+            border-color: var(--tealBorder);
+        }
+
+        .aboutMeContainerItem {
+            display: flex;
+            align-items: center;
+            height: 300px;
+            border-right: var(--rightBorder);
+        }
+
+        .sectionTitle{
+            font-family: var(--mainFont);
+            font-size: var(--largeFontSize);
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .profileImageContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #profileImage {
+            height: 275px;
+            width:  95%;
+            object-fit: var(--imageAspectRatio);
+            border: var(--imageBorder);
+            border-radius: 50px;
+        }
+
+        .aboutMeDetailsText {
+            font-family: var(--mainFont);
+            font-size: var(--smallFontSize);
+            text-align: center;
+        }
+
+    /*About Me Content Section*/
+
+
+    /*Work Content Section*/
+
+        #workSectionContainer {
+            width: var(--fullContainerWidth);
+            height: 1200px;
+            border-style: var(--solidBorder);
+            border-width: var(--borderWidth);
+            border-color: var(--tealBorder);
+        }
+
+        .workTitleContainer {
+            border-right: var(--borderWidth) var(--solidBorder) var(--tealBorder);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .imageLinkContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: var(--fullContainerWidth);
+        }
+
+        .mainProjectImageContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #mainProjectImage {
+            height: 550px;
+            width:  85%;
+            object-fit: var(--imageAspectRatio);
+            border: var(--imageBorder);
+            border-radius: 20px;
+            object-position: var(--imagePosition);
+        }
+        
+        .mainProjectImageContainerText {
+            background-color: var(--imageTitleBackgroundColor);
+            color: var(--imageTitleTextColor);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: var(--mediumFontSize);
+            position: absolute;
+            top: 40%;
+            right: 10%;
+          }
+
+        .otherProjectsContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: var(--fullContainerWidth);
+        }
+
+        .otherProjectsImageContainer{
+            display: flex;
+            justify-content: center;
+            margin-left: 20px;
+        }
+
+        .otherImagesLinkContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 95%;
+        }
+
+        .otherProjectsImage {
+            height: 200px;
+            width:  var(--fullContainerWidth);
+            object-fit: var(--imageAspectRatio);
+            border: var(--imageBorder);
+            border-radius: 10px;
+            object-position: var(--imagePosition);
+        }
+
+        .otherProjectImageContainerText {
+            background-color: var(--imageTitleBackgroundColor);
+            color: var(--imageTitleTextColor);
+            font-family: var(--mainFont);
+            font-size: var(--smallFontSize);
+            position: absolute;
+            top: 70%;
+            right: 5%;
+          }
+
+
+    /*Work Content Section*/
+
+
+    /*Contact Me Content Section*/ 
+        #contactMeContainer {
+            width: var(--fullContainerWidth);
+            height: 150px;
+            border-style: var(--solidBorder);
+            border-width: var(--borderWidth);
+            border-color: var(--tealBorder);
+        }
+
+        .contactMeTitleContainer {
+            border-right: var(--borderWidth) var(--solidBorder) var(--tealBorder);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: var(--fullContainerWidth);
+            height: 150px;
+        }
+
+        .contactMeDetails {
+            height: 100%;
+            width: var(--fullContainerWidth);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contactInformation {
+            display: inline;
+            padding: 10px;
+            font-size: var(--largeFontSize);
+        }
+        
+        .contactInformationLink {
+            text-decoration: underline;
+            color: var(--headerTextColor);
+            font-family: var(--mainFont);
+            font-weight: bold;
+            font-size: var(--mediumFontSize);
+        }
+
+    /*Contact Me Content Section*/
+
+/*Main Content Section*/
+
+/*
+    Responsive CSS
+*/
+
+    /*
+    Navigation Header
+    */
+
+    #navigationBarResponsive {
+        background-color: var(--headerBackgroundColor);
+    }
+
+    .webpageTitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--headerBackgroundColor);
+        padding-top: 10px;
+    }
+
+    .pageTitle {
+        font-family: var(--mainFont);
+        font-size: var(--mediumFontSize);
+        color: var(--bannerTextColor);
+    }
+
+    .navBarMenuResponsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--headerBackgroundColor);
+    }
+
+    #navigationBarContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbarNavItems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*
+    Navigation Header
+    */
+
+    /*
+        aboutMeSection
+    */
+
+    #aboutMeContainerResponsive {
+        width: var(--fullContainerWidth);
+        height: 600px;
+        border-style: var(--solidBorder);
+        border-width: var(--borderWidth);
+        border-color: var(--tealBorder);
+    }
+
+    .sectionTitleResponsive {
+        width: var(--fullContainerWidth);
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sectionTitleTextResponsive{
+        font-family: var(--mainFont);
+        font-size: var(--largeFontSize);
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .profileImageContainerResponsive {
+        width: var(--fullContainerWidth);
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profileImageResponsive {
+        height: 300px;
+        width:  90%;
+        object-fit: var(--imageAspectRatio);
+        border: var(--imageBorder);
+        border-radius: 50px;
+    }
+
+    .aboutMeContainerItemResponsive {
+        width: var(--fullContainerWidth);
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .aboutMeDetailsTextResponsive {
+        height: 100%;
+        width: 80%;
+        font-family: var(--mainFont);
+        font-size: var(--smallFontSize);
+        text-align: center;
+    }
+
+
+    /*
+        aboutMeSection
+    */
+
+    /*
+        Start of Work Section
+    */
+    #workSectionContainerResponsive {
+        width: var(--fullContainerWidth);
+        height: 1200px;
+        border-style: var(--solidBorder);
+        border-width: var(--borderWidth);
+        border-color: var(--tealBorder);
+    }
+
+    .imageLinkContainerResponsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mainProjectContainerResponsive {
+        width: var(--fullContainerWidth);
+        height: 50%;
+    }
+
+    .mainProjectImageContainerResponsive {
+        width: var(--fullContainerWidth);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mainProjectImageResponsive {
+        height: 500px;
+        width:  85%;
+        object-fit: var(--imageAspectRatio);
+        border: var(--imageBorder);
+        border-radius: 20px;
+    }
+
+    .mainProjectImageContainerTextResponsive {
+        background-color: var(--imageTitleBackgroundColor);
+        color: var(--imageTitleTextColor);
+        font-family: var(--mainFont);
+        font-size: var(--mediumFontSize);
+        position: relative;
+        top: -90px;
+        left: 70%;
+    }
+
+    .otherImagesLinkContainerResponsive { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: var(--fullContainerWidth)
+    }
+
+    .otherProjectsContainerResponsive {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: var(--fullContainerWidth);
+    }
+
+    .otherProjectsImageResponsive {
+        height: 250px;
+        width: 95%;
+        object-fit: var(--imageAspectRatio);
+        border: var(--imageBorder);
+        border-radius: 10px;
+    }
+
+    /*
+        End of Work Section
+    */
+
+    /*
+    Contact Me Section
+    */  
+
+    #contactMeResponsiveContainer {
+        height: 200px;
+        width: var(--fullContainerWidth);
+        border-style: var(--solidBorder);
+        border-width: var(--borderWidth);
+        border-color: var(--tealBorder);
+    }
+    .sectionTitleResponsive {
+        font-family: var(--mainFont);
+        font-size: var(--largeFontSize);
+        text-align: right;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .contactMeSectionTextContainerResponsive {
+        width: var(--fullContainerWidth);
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactMeDetailsResponsive {
+        height: 100%;
+        width: var(--fullContainerWidth);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .contactInformationResponsive {
+        display: inline;
+        padding: 10px;
+        font-size: var(--largeFontSize);
+    }
+    /*
+    Contact Me Section
+    */
+
+/*
+    Responsive CSS
+*/
