@@ -111,7 +111,6 @@ a {
         .aboutMeDetailsText {
             font-family: var(--mainFont);
             font-size: var(--smallFontSize);
-            text-align: center;
         }
 
     /*About Me Content Section*/
